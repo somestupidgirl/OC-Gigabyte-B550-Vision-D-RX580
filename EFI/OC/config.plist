@@ -128,7 +128,44 @@
 	<key>DeviceProperties</key>
 	<dict>
 		<key>Add</key>
-		<dict/>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x3,0x2)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>model</key>
+				<string>NVIDIA Corporation TU102 [GeForce RTX 2080 Ti] (rev a1)</string>
+				<key>disable-gpu</key>
+				<true/>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x3,0x2)/Pci(0x0,0x1)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>model</key>
+				<string>NVIDIA Corporation TU102 High Definition Audio Controller (rev a1)</string>
+				<key>disable-gpu</key>
+				<true/>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x3,0x2)/Pci(0x0,0x2)</key>
+			<dict>
+				<key>device_type</key>
+				<string>USB controller</string>
+				<key>model</key>
+				<string>NVIDIA Corporation TU102 USB Pci(0x3,0x1) Host Controller (rev a1)</string>
+				<key>disable-gpu</key>
+				<true/>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x3,0x2)/Pci(0x0,0x3)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Serial bus controller [0c80]</string>
+				<key>model</key>
+				<string>NVIDIA Corporation TU102 USB Type-C UCSI Controller (rev a1)</string>
+				<key>disable-gpu</key>
+				<true/>
+			</dict>
+		</dict>
 		<key>Delete</key>
 		<dict/>
 	</dict>
