@@ -38,6 +38,14 @@
 				<key>Path</key>
 				<string>SSDT-B550-XHC0-TO-XHC.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>XHC2 Port Definitions (all ports enabled)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-B550-PTXH-TO-XHC2.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
