@@ -46,6 +46,14 @@
 				<key>Path</key>
 				<string>SSDT-B550-PTXH-TO-XHC2.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Thunderbolt Hot Plug</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-B550-TB3-HOTPLUG.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
