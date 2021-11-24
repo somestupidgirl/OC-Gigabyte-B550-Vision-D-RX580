@@ -1145,23 +1145,23 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>** Enter Board Serial Num **</string>
+			<string>F5K914207GUK3F71H</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data></data>
+			<data>XK3Py/8k</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>iMacPro7,1</string>
+			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
-			<string>** Enter Serial Num **</string>
+			<string>F5KYJJZ6P7QM</string>
 			<key>SystemUUID</key>
-			<string>** Enter System UUID **</string>
+			<string>5B6CE93E-E149-4CCC-B85D-689E99581860</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
