@@ -62,6 +62,14 @@
 				<key>Path</key>
 				<string>SSDT-TDBG.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>PLUG for Ryzen</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PLUG-RYZEN.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
