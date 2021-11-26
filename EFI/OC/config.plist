@@ -54,6 +54,14 @@
 				<key>Path</key>
 				<string>SSDT-B550-TB3-HOTPLUG.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>For ThunderboltPkg debugging</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-TDBG.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
@@ -1491,6 +1499,16 @@
 				<string></string>
 				<key>Comment</key>
 				<string>AmdIntelEmuRuntime.efi</string>
+			</dict>
+			<dict>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>TbtForcePower.efi</string>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>TbtForcePower.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
