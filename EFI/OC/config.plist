@@ -1472,6 +1472,26 @@
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
 			</dict>
+			<dict>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>AmdIntelEmuDxe.efi</string>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>AmdIntelEmuDxe.efi</string>
+			</dict>
+			<dict>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>AmdIntelEmuRuntime.efi</string>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>AmdIntelEmuRuntime.efi</string>
+			</dict>
 		</array>
 		<key>Input</key>
 		<dict>
