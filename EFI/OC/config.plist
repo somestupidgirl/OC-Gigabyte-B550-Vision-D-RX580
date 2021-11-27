@@ -1226,6 +1226,24 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
+				<string>DisableEHCI.kext</string>
+				<key>Comment</key>
+				<string>Disable EHCI</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
 				<string>AGPMInjector-MacPro7,1-RX580.kext</string>
 				<key>Comment</key>
 				<string>AGPMInjector for MacPro7,1 SMBIOS and RX580</string>
