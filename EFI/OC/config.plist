@@ -94,6 +94,14 @@
 				<key>Path</key>
 				<string>SSDT-HPET.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Changes Device/Vendor IDs of SBRG</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-SBRG.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
