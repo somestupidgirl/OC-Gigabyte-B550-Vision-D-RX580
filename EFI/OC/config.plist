@@ -598,6 +598,8 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,3,1/0,0</string>
+				<key>built-in</key>
+				<data>AQ==</data>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
 				<key>model</key>
@@ -608,6 +610,8 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,3,1/0,1</string>
+				<key>built-in</key>
+				<data>AQ==</data>
 				<key>device_type</key>
 				<string>Audio device</string>
 				<key>model</key>
