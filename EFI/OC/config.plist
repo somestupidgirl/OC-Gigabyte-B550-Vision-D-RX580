@@ -2265,7 +2265,7 @@
 			</dict>
 			<dict>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
 				<string>AmdIntelEmuDxe.efi</string>
 				<key>Arguments</key>
@@ -2275,7 +2275,7 @@
 			</dict>
 			<dict>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
 				<string>AmdIntelEmuRuntime.efi</string>
 				<key>Arguments</key>
