@@ -16,11 +16,27 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>EC and USBX Devices</string>
+				<string>XCPM power management enabler. Needed for AGPMInjector.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-EC-USBX-DESKTOP.aml</string>
+				<string>SSDT-PLUG_RYZEN.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fake EC device</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AppleUSBPower property injector, use in conjunction with SSDT-EC.</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-USBX.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -32,51 +48,19 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>XHC Port Definitions</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-B550-XHC0-TO-XHC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>XHC2 Port Definitions (all ports enabled)</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-B550-PTXH-TO-XHC2.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Thunderbolt Hot Plug</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-B550-TB3-HOTPLUG.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>For ThunderboltPkg debugging</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>SSDT-TDBG.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>PLUG for Ryzen</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PLUG-RYZEN.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Enables SMBus device</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-SBUS-MCHC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>NVRAM fix</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PMC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -96,14 +80,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Changes Device/Vendor IDs of SBRG</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-SBRG.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>OS Check Fix</string>
 				<key>Enabled</key>
 				<true/>
@@ -112,11 +88,43 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>NVRAM fix</string>
+				<string>XHC2 Port Definitions (all ports enabled)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PMC.aml</string>
+				<string>SSDT-B550-PTXH-TO-XHC2.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Changes Device/Vendor IDs of SBRG</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-SBRG.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>XHC Port Definitions</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-B550-XHC0-TO-XHC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Thunderbolt Hot Plug</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-B550-TB3-HOTPLUG.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>For ThunderboltPkg debugging</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-TDBG.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
