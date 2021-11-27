@@ -201,6 +201,418 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse Root Complex</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x0,0x2)</key>
+			<dict>
+				<key>device_type</key>
+				<string>IOMMU</string>
+				<key>model</key>
+				<string>Starship/Matisse IOMMU</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse PCIe Dummy Host Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x1)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse GPP Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse GPP Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse PCIe Dummy Host Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x3,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse PCIe Dummy Host Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x3,0x1)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse GPP Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x3,0x2)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse GPP Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x4,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse PCIe Dummy Host Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x5,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse PCIe Dummy Host Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x7,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse PCIe Dummy Host Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x7,0x1)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse PCIe Dummy Host Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x1)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>SMBus</string>
+				<key>model</key>
+				<string>FCH SMBus Controller (rev 61)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x14,0x3)</key>
+			<dict>
+				<key>device_type</key>
+				<string>ISA bridge</string>
+				<key>model</key>
+				<string>FCH LPC Bridge (rev 51)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x18,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Matisse Device 24: Function 0</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x18,0x1)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Matisse Device 24: Function 1</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x18,0x2)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Matisse Device 24: Function 2</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x18,0x3)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Matisse Device 24: Function 3</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x18,0x4)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Matisse Device 24: Function 4</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x18,0x5)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Matisse Device 24: Function 5</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x18,0x6)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Matisse Device 24: Function 6</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x18,0x7)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>Matisse Device 24: Function 7</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,1/0,0</string>
+				<key>device_type</key>
+				<string>Non-Volatile memory controller</string>
+				<key>model</key>
+				<string>‎MZ-V7S500BW</string>
+				<key>name</key>
+				<string>Samsung 970 EVO PLUS 1TB NVMe SSD</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>#acpi-wake-type</key>
+				<data>AQAAAA==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,0</string>
+				<key>device_type</key>
+				<string>USB controller</string>
+				<key>model</key>
+				<string>Internal AMD Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x1)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,1</string>
+				<key>device_type</key>
+				<string>SATA controller</string>
+				<key>model</key>
+				<string>Matisse SATA Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>name</key>
+				<string>Device 43ea</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Device 43ea</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x4,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Device 43ea</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Device 43ea</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x9,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Device 43ea</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Bridge</string>
+				<key>model</key>
+				<string>JHL7540</string>
+				<key>name</key>
+				<string>Titan Ridge 4C 2018 (rev 06)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Bridge</string>
+				<key>model</key>
+				<string>JHL7540</string>
+				<key>name</key>
+				<string>Titan Ridge 4C 2018 (rev 06)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x1,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Bridge</string>
+				<key>model</key>
+				<string>JHL7540</string>
+				<key>name</key>
+				<string>Titan Ridge 4C 2018 (rev 06)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Bridge</string>
+				<key>model</key>
+				<string>JHL7540</string>
+				<key>name</key>
+				<string>Titan Ridge 4C 2018 (rev 06)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x4,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Bridge</string>
+				<key>model</key>
+				<string>JHL7540</string>
+				<key>name</key>
+				<string>Titan Ridge 4C 2018 (rev 06)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Thunderbolt 3 NHI</string>
+				<key>model</key>
+				<string>JHL7540</string>
+				<key>name</key>
+				<string>Titan Ridge 4C 2018 (rev 06)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Thunderbolt 3 USB Controller</string>
+				<key>model</key>
+				<string>JHL7540</string>
+				<key>name</key>
+				<string>Titan Ridge 4C 2018 (rev 06)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x4,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,1/0,0</string>
+				<key>built-in</key>
+				<data>AA==</data>
+				<key>device_type</key>
+				<string>Non-Volatile memory controller</string>
+				<key>model</key>
+				<string>MZ-V7E1T0BW</string>
+				<key>name</key>
+				<string>Samsung 970 EVO 1TB NVMe SSD</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>ASMedia Technology Inc. ASM1184e</string>
+				<key>name</key>
+				<string>PCIe Switch Port</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x1,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>ASM1184e</string>
+				<key>name</key>
+				<string>ASMedia Technology Inc. PCIe Switch Port</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x3,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>ASM1184e</string>
+				<key>name</key>
+				<string>ASMedia Technology Inc. PCIe Switch Port</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x5,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>ASM1184e</string>
+				<key>name</key>
+				<string>ASMedia Technology Inc. PCIe Switch Port</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x7,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>ASM1184e</string>
+				<key>name</key>
+				<string>ASMedia Technology Inc. PCIe Switch Port</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x5,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,2/8,0/0,0/5,0/0,0</string>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Ethernet controller</string>
+				<key>model</key>
+				<string>I211 Gigabit Network Connection</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x7,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,2/8,0/0,0/7,0/0,0</string>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Ethernet controller</string>
+				<key>model</key>
+				<string>I211 Gigabit Network Connection</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x9,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,2/9,0/0,0</string>
+				<key>device_type</key>
+				<string>Network controller</string>
+				<key>model</key>
+				<string>Intel Corporation Wi-Fi 6 AX200 (rev 1a)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x3,0x1)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,3,1/0,0</string>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>model</key>
+				<string>Ellesmere [Radeon RX 470/480/570/570X/580/580X/590] (rev e7)
+</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x3,0x1)/Pci(0x0,0x1)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,3,1/0,1</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>model</key>
+				<string>Ellesmere HDMI Audio [Radeon RX 470/480 / 570/580/590]</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x3,0x2)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>device_type</key>
@@ -236,6 +648,49 @@
 				<string>NVIDIA Corporation TU102 USB Type-C UCSI Controller (rev a1)</string>
 				<key>disable-gpu</key>
 				<true/>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x7,0x1)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Non-Essential Instrumentation</string>
+				<key>model</key>
+				<string>Starship/Matisse PCIe Dummy Function</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Non-Essential Instrumentation</string>
+				<key>model</key>
+				<string>Starship/Matisse Reserved SPP</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x1)</key>
+			<dict>
+				<key>device_type</key>
+				<string>Encryption controller</string>
+				<key>model</key>
+				<string>Starship/Matisse Cryptographic Coprocessor PSPCPP</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x3)</key>
+			<dict>
+				<key>#acpi-wake-type</key>
+				<data>AQAAAA==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,8,1/0,3</string>
+				<key>device_type</key>
+				<string>USB controller</string>
+				<key>model</key>
+				<string>Matisse USB 3.0 Host Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x4)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,8,1/0,4</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>model</key>
+				<string>Realtek ALC-1220</string>
+				<key>name</key>
+				<string>Starship/Matisse HD Audio Controller</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
