@@ -2089,6 +2089,26 @@
 				<false/>
 			</dict>
 			<dict>
+				<key>Name</key>
+				<string>GRUB Shell</string>
+				<key>Comment</key>
+				<string>Patched grub that adds new commands to grub's shell, allows rw access to the UEFI varstore and may be used to change hidden BIOS settings.</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>modGRUBShell.efi</string>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<false/>
+				<key>Flavour</key>
+				<string>OpenShell:UEFIShell:Shell</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
+			<dict>
 				<key>Arguments</key>
 				<string>Shutdown</string>
 				<key>Auxiliary</key>
