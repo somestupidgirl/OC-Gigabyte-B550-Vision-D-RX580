@@ -2694,6 +2694,16 @@
 				<key>Comment</key>
 				<string>HFS UEFI file system</string>
 			</dict>
+			<dict>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>iso9660_x64.efi</string>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>ISO9660 UEFI file system</string>
+			</dict>
 		</array>
 		<key>Input</key>
 		<dict>
