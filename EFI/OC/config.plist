@@ -2724,6 +2724,16 @@
 				<key>Comment</key>
 				<string>procfs UEFI file system</string>
 			</dict>
+			<dict>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>tar_x64.efi</string>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>tar UEFI file system</string>
+			</dict>
 		</array>
 		<key>Input</key>
 		<dict>
