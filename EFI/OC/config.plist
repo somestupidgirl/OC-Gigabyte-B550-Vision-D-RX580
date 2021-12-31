@@ -56,14 +56,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>NVRAM fix</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PMC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Helper Function</string>
 				<key>Enabled</key>
 				<true/>
@@ -194,14 +186,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>Change _OSI to XOSI</string>
-				<key>Enabled</key>
-				<true/>
 				<key>Count</key>
 				<integer>0</integer>
-				<key>Limit</key>
-				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
 				<key>Find</key>
 				<data>X09TSQ==</data>
+				<key>Limit</key>
+				<integer>0</integer>
 				<key>Replace</key>
 				<data>WE9TSQ==</data>
 			</dict>
@@ -312,6 +304,19 @@
 				<key>model</key>
 				<string>AMD Starship/Matisse GPP Bridge</string>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,1/0,0</string>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Non-Volatile memory controller</string>
+				<key>model</key>
+				<string>‎MZ-V7S500BW</string>
+				<key>name</key>
+				<string>Samsung 970 EVO PLUS 1TB NVMe SSD</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x2)</key>
 			<dict>
 				<key>built-in</key>
@@ -321,95 +326,266 @@
 				<key>model</key>
 				<string>AMD Starship/Matisse GPP Bridge</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,0</string>
+				<key>acpi-wake-type</key>
+				<data>AQAAAA==</data>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>USB controller</string>
+				<key>model</key>
+				<string>Internal AMD Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x1)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,1</string>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>SATA controller</string>
+				<key>model</key>
+				<string>Matisse SATA Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)</key>
 			<dict>
 				<key>built-in</key>
 				<data>AQ==</data>
 				<key>device_type</key>
-				<string>Host bridge</string>
-				<key>model</key>
-				<string>AMD Starship/Matisse PCIe Dummy Host Bridge</string>
+				<string>PCI bridge</string>
+				<key>name</key>
+				<string>Device 43ea</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x3,0x0)</key>
-			<dict>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>Host bridge</string>
-				<key>model</key>
-				<string>AMD Starship/Matisse PCIe Dummy Host Bridge</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x3,0x1)</key>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>built-in</key>
 				<data>AQ==</data>
 				<key>device_type</key>
 				<string>PCI bridge</string>
 				<key>model</key>
-				<string>AMD Starship/Matisse GPP Bridge</string>
+				<string>Device 43ea</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x3,0x2)</key>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Thunderbolt</string>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Bridge</string>
+				<key>model</key>
+				<string>JHL7540</string>
+				<key>name</key>
+				<string>Titan Ridge 4C 2018 (rev 06)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Thunderbolt</string>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Bridge</string>
+				<key>model</key>
+				<string>JHL7540</string>
+				<key>name</key>
+				<string>Titan Ridge 4C 2018 (rev 06)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Thunderbolt</string>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Thunderbolt 3 NHI</string>
+				<key>model</key>
+				<string>JHL7540</string>
+				<key>name</key>
+				<string>Titan Ridge 4C 2018 (rev 06)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x1,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Thunderbolt</string>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Bridge</string>
+				<key>model</key>
+				<string>JHL7540</string>
+				<key>name</key>
+				<string>Titan Ridge 4C 2018 (rev 06)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Thunderbolt</string>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Bridge</string>
+				<key>model</key>
+				<string>JHL7540</string>
+				<key>name</key>
+				<string>Titan Ridge 4C 2018 (rev 06)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Thunderbolt</string>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Thunderbolt 3 USB Controller</string>
+				<key>model</key>
+				<string>JHL7540</string>
+				<key>name</key>
+				<string>Titan Ridge 4C 2018 (rev 06)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x4,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Thunderbolt</string>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Thunderbolt 3 Bridge</string>
+				<key>model</key>
+				<string>JHL7540</string>
+				<key>name</key>
+				<string>Titan Ridge 4C 2018 (rev 06)</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x4,0x0)</key>
 			<dict>
 				<key>built-in</key>
 				<data>AQ==</data>
 				<key>device_type</key>
 				<string>PCI bridge</string>
 				<key>model</key>
-				<string>AMD Starship/Matisse GPP Bridge</string>
+				<string>Device 43ea</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x4,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x4,0x0)/Pci(0x0,0x0)</key>
 			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,1/0,0</string>
 				<key>built-in</key>
 				<data>AQ==</data>
 				<key>device_type</key>
-				<string>Host bridge</string>
+				<string>Non-Volatile memory controller</string>
 				<key>model</key>
-				<string>AMD Starship/Matisse PCIe Dummy Host Bridge</string>
+				<string>MZ-V7E1T0BW</string>
+				<key>name</key>
+				<string>Samsung 970 EVO 1TB NVMe SSD</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x5,0x0)</key>
-			<dict>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>Host bridge</string>
-				<key>model</key>
-				<string>AMD Starship/Matisse PCIe Dummy Host Bridge</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x7,0x0)</key>
-			<dict>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>Host bridge</string>
-				<key>model</key>
-				<string>AMD Starship/Matisse PCIe Dummy Host Bridge</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x7,0x1)</key>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)</key>
 			<dict>
 				<key>built-in</key>
 				<data>AQ==</data>
 				<key>device_type</key>
 				<string>PCI bridge</string>
 				<key>model</key>
-				<string>AMD Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]</string>
+				<string>Device 43ea</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x8,0x0)</key>
-			<dict>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>Host bridge</string>
-				<key>model</key>
-				<string>AMD Starship/Matisse PCIe Dummy Host Bridge</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x8,0x1)</key>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>built-in</key>
 				<data>AQ==</data>
 				<key>device_type</key>
 				<string>PCI bridge</string>
 				<key>model</key>
-				<string>AMD Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]</string>
+				<string>ASMedia Technology Inc. ASM1184e</string>
+				<key>name</key>
+				<string>PCIe Switch Port</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x1,0x0)</key>
+			<dict>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>ASM1184e</string>
+				<key>name</key>
+				<string>ASMedia Technology Inc. PCIe Switch Port</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x3,0x0)</key>
+			<dict>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>ASM1184e</string>
+				<key>name</key>
+				<string>ASMedia Technology Inc. PCIe Switch Port</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x5,0x0)</key>
+			<dict>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>ASM1184e</string>
+				<key>name</key>
+				<string>ASMedia Technology Inc. PCIe Switch Port</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x5,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,2/8,0/0,0/5,0/0,0</string>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Ethernet controller</string>
+				<key>model</key>
+				<string>I211 Gigabit Network Connection</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x7,0x0)</key>
+			<dict>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>ASM1184e</string>
+				<key>name</key>
+				<string>ASMedia Technology Inc. PCIe Switch Port</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x7,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,2/8,0/0,0/7,0/0,0</string>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Ethernet controller</string>
+				<key>model</key>
+				<string>I211 Gigabit Network Connection</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x9,0x0)</key>
+			<dict>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>Device 43ea</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x9,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,1,2/0,2/9,0/0,0</string>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Network controller</string>
+				<key>model</key>
+				<string>Intel Corporation Wi-Fi 6 AX200 (rev 1a)</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
@@ -501,279 +677,32 @@
 				<key>model</key>
 				<string>AMD Matisse Device 24: Function 7</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,1,1/0,0</string>
 				<key>built-in</key>
 				<data>AQ==</data>
 				<key>device_type</key>
-				<string>Non-Volatile memory controller</string>
+				<string>Host bridge</string>
 				<key>model</key>
-				<string>‎MZ-V7S500BW</string>
-				<key>name</key>
-				<string>Samsung 970 EVO PLUS 1TB NVMe SSD</string>
+				<string>AMD Starship/Matisse PCIe Dummy Host Bridge</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x3,0x0)</key>
 			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,1,2/0,0</string>
 				<key>built-in</key>
 				<data>AQ==</data>
-				<key>acpi-wake-type</key>
-				<data>AQAAAA==</data>
 				<key>device_type</key>
-				<string>USB controller</string>
+				<string>Host bridge</string>
 				<key>model</key>
-				<string>Internal AMD Controller</string>
+				<string>AMD Starship/Matisse PCIe Dummy Host Bridge</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x1)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,1,2/0,1</string>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>SATA controller</string>
-				<key>model</key>
-				<string>Matisse SATA Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)</key>
-			<dict>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>PCI bridge</string>
-				<key>name</key>
-				<string>Device 43ea</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x3,0x1)</key>
 			<dict>
 				<key>built-in</key>
 				<data>AQ==</data>
 				<key>device_type</key>
 				<string>PCI bridge</string>
 				<key>model</key>
-				<string>Device 43ea</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x4,0x0)</key>
-			<dict>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>PCI bridge</string>
-				<key>model</key>
-				<string>Device 43ea</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)</key>
-			<dict>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>PCI bridge</string>
-				<key>model</key>
-				<string>Device 43ea</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x9,0x0)</key>
-			<dict>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>PCI bridge</string>
-				<key>model</key>
-				<string>Device 43ea</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Thunderbolt</string>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>Thunderbolt 3 Bridge</string>
-				<key>model</key>
-				<string>JHL7540</string>
-				<key>name</key>
-				<string>Titan Ridge 4C 2018 (rev 06)</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Thunderbolt</string>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>Thunderbolt 3 Bridge</string>
-				<key>model</key>
-				<string>JHL7540</string>
-				<key>name</key>
-				<string>Titan Ridge 4C 2018 (rev 06)</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x1,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Thunderbolt</string>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>Thunderbolt 3 Bridge</string>
-				<key>model</key>
-				<string>JHL7540</string>
-				<key>name</key>
-				<string>Titan Ridge 4C 2018 (rev 06)</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x2,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Thunderbolt</string>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>Thunderbolt 3 Bridge</string>
-				<key>model</key>
-				<string>JHL7540</string>
-				<key>name</key>
-				<string>Titan Ridge 4C 2018 (rev 06)</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x4,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Thunderbolt</string>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>Thunderbolt 3 Bridge</string>
-				<key>model</key>
-				<string>JHL7540</string>
-				<key>name</key>
-				<string>Titan Ridge 4C 2018 (rev 06)</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Thunderbolt</string>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>Thunderbolt 3 NHI</string>
-				<key>model</key>
-				<string>JHL7540</string>
-				<key>name</key>
-				<string>Titan Ridge 4C 2018 (rev 06)</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Thunderbolt</string>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>Thunderbolt 3 USB Controller</string>
-				<key>model</key>
-				<string>JHL7540</string>
-				<key>name</key>
-				<string>Titan Ridge 4C 2018 (rev 06)</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x4,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,1,1/0,0</string>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>Non-Volatile memory controller</string>
-				<key>model</key>
-				<string>MZ-V7E1T0BW</string>
-				<key>name</key>
-				<string>Samsung 970 EVO 1TB NVMe SSD</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>PCI bridge</string>
-				<key>model</key>
-				<string>ASMedia Technology Inc. ASM1184e</string>
-				<key>name</key>
-				<string>PCIe Switch Port</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x1,0x0)</key>
-			<dict>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>PCI bridge</string>
-				<key>model</key>
-				<string>ASM1184e</string>
-				<key>name</key>
-				<string>ASMedia Technology Inc. PCIe Switch Port</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x3,0x0)</key>
-			<dict>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>PCI bridge</string>
-				<key>model</key>
-				<string>ASM1184e</string>
-				<key>name</key>
-				<string>ASMedia Technology Inc. PCIe Switch Port</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x5,0x0)</key>
-			<dict>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>PCI bridge</string>
-				<key>model</key>
-				<string>ASM1184e</string>
-				<key>name</key>
-				<string>ASMedia Technology Inc. PCIe Switch Port</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x7,0x0)</key>
-			<dict>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>PCI bridge</string>
-				<key>model</key>
-				<string>ASM1184e</string>
-				<key>name</key>
-				<string>ASMedia Technology Inc. PCIe Switch Port</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x5,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,1,2/0,2/8,0/0,0/5,0/0,0</string>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>Ethernet controller</string>
-				<key>model</key>
-				<string>I211 Gigabit Network Connection</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x8,0x0)/Pci(0x0,0x0)/Pci(0x7,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,1,2/0,2/8,0/0,0/7,0/0,0</string>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>Ethernet controller</string>
-				<key>model</key>
-				<string>I211 Gigabit Network Connection</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x2)/Pci(0x9,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,1,2/0,2/9,0/0,0</string>
-				<key>built-in</key>
-				<data>AQ==</data>
-				<key>device_type</key>
-				<string>Network controller</string>
-				<key>model</key>
-				<string>Intel Corporation Wi-Fi 6 AX200 (rev 1a)</string>
+				<string>AMD Starship/Matisse GPP Bridge</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x3,0x1)/Pci(0x0,0x0)</key>
 			<dict>
@@ -798,16 +727,25 @@
 				<key>model</key>
 				<string>AMD Ellesmere HDMI Audio Radeon RX 580</string>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x3,0x2)</key>
+			<dict>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>AMD Starship/Matisse GPP Bridge</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x3,0x2)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>built-in</key>
 				<data>AA==</data>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
-				<key>model</key>
-				<string>NVIDIA Corporation TU102 [GeForce RTX 2080 Ti] (rev a1)</string>
 				<key>disable-gpu</key>
 				<true/>
+				<key>model</key>
+				<string>NVIDIA Corporation TU102 [GeForce RTX 2080 Ti] (rev a1)</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x3,0x2)/Pci(0x0,0x1)</key>
 			<dict>
@@ -836,6 +774,42 @@
 				<key>model</key>
 				<string>NVIDIA Corporation TU102 USB Type-C UCSI Controller (rev a1)</string>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x4,0x0)</key>
+			<dict>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>AMD Starship/Matisse PCIe Dummy Host Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x5,0x0)</key>
+			<dict>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>AMD Starship/Matisse PCIe Dummy Host Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x7,0x0)</key>
+			<dict>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>AMD Starship/Matisse PCIe Dummy Host Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x7,0x1)</key>
+			<dict>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>AMD Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x7,0x1)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>built-in</key>
@@ -844,6 +818,24 @@
 				<string>Non-Essential Instrumentation</string>
 				<key>model</key>
 				<string>AMD Starship/Matisse PCIe Dummy Function</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x0)</key>
+			<dict>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>Host bridge</string>
+				<key>model</key>
+				<string>AMD Starship/Matisse PCIe Dummy Host Bridge</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x8,0x1)</key>
+			<dict>
+				<key>built-in</key>
+				<data>AQ==</data>
+				<key>device_type</key>
+				<string>PCI bridge</string>
+				<key>model</key>
+				<string>AMD Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x0)</key>
 			<dict>
@@ -867,10 +859,10 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,8,1/0,3</string>
-				<key>built-in</key>
-				<data>AQ==</data>
 				<key>acpi-wake-type</key>
 				<data>AQAAAA==</data>
+				<key>built-in</key>
+				<data>AQ==</data>
 				<key>device_type</key>
 				<string>USB controller</string>
 				<key>model</key>
@@ -885,9 +877,11 @@
 				<key>device_type</key>
 				<string>Audio device</string>
 				<key>model</key>
-				<string>Realtek ALC-1220</string>
+				<string>Realtek ALC1220</string>
 				<key>name</key>
 				<string>Starship/Matisse HD Audio Controller</string>
+				<key>layout-id</key>
+				<data>AAAAAQ==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1024,6 +1018,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooTSCSyncAMD-16Cores.kext</string>
 				<key>Comment</key>
@@ -1032,8 +1028,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooTSCSyncAMD</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1083,11 +1077,29 @@
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Comment</key>
-				<string>Audio patches</string>
+				<string>Audio patches (do not use with VoodooHDA.kext)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AppleALC</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>VoodooHDA.kext</string>
+				<key>Comment</key>
+				<string>Audio patches (do not use with AppleALC.kext)</string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooHDA</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1124,6 +1136,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>CtlnaAHCIPORT.kext</string>
+				<key>Comment</key>
+				<string>Fix for hot plugging SATA drives in Big Sur</string>
+				<key>Disabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/CtlnaAHCIPort</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1186,6 +1216,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>USBToolBox.kext</string>
 				<key>Comment</key>
@@ -1194,8 +1226,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/USBToolBox</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1204,6 +1234,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>UTBMap.kext</string>
 				<key>Comment</key>
@@ -1212,8 +1244,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1222,6 +1252,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>HibernationFixup.kext</string>
 				<key>Comment</key>
@@ -1230,8 +1262,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/HibernationFixup</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1240,6 +1270,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>TrimForce.kext</string>
 				<key>Comment</key>
@@ -1248,8 +1280,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/TrimForce</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1294,6 +1324,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>AirportItlwm.kext</string>
 				<key>Comment</key>
@@ -1302,8 +1334,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AirportItlwm</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1312,6 +1342,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>itlwm.kext</string>
 				<key>Comment</key>
@@ -1320,8 +1352,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/itlwm</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1330,6 +1360,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>IntelBluetoothFirmware.kext</string>
 				<key>Comment</key>
@@ -1338,8 +1370,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/IntelBluetoothFirmware</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1348,6 +1378,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>IntelBluetoothInjector.kext</string>
 				<key>Comment</key>
@@ -1356,8 +1388,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1366,6 +1396,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>DirectHW.kext</string>
 				<key>Comment</key>
@@ -1374,8 +1406,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/DirectHW</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1424,6 +1454,36 @@
 		</array>
 		<key>Patch</key>
 		<array>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string></string>
+				<key>Comment</key>
+				<string>Patch for hot plugging SATA drives in Big Sur</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>QGACAA==</data>
+				<key>Identifier</key>
+				<string>com.apple.driver.AppleAHCIPort</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>Replace</key>
+				<data>AAAAAA==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
 			<dict>
 				<key>Arch</key>
 				<string>x86_64</string>
@@ -1983,7 +2043,7 @@
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Pure</string>
+			<string>Misc/Icons</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -2089,20 +2149,20 @@
 				<false/>
 			</dict>
 			<dict>
-				<key>Name</key>
-				<string>GRUB Shell</string>
-				<key>Comment</key>
-				<string>Patched grub that adds new commands to grub's shell, allows rw access to the UEFI varstore and may be used to change hidden BIOS settings.</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>modGRUBShell.efi</string>
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
 				<false/>
+				<key>Comment</key>
+				<string>Patched grub that adds new commands to grub's shell, allows rw access to the UEFI varstore and may be used to change hidden BIOS settings.</string>
+				<key>Enabled</key>
+				<true/>
 				<key>Flavour</key>
 				<string>OpenShell:UEFIShell:Shell</string>
+				<key>Name</key>
+				<string>modGRUB Shell</string>
+				<key>Path</key>
+				<string>modGRUBShell.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -2110,17 +2170,17 @@
 			</dict>
 			<dict>
 				<key>Arguments</key>
-				<string>Shutdown</string>
+				<string></string>
 				<key>Auxiliary</key>
 				<true/>
 				<key>Comment</key>
 				<string>Perform shutdown</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
 				<key>Name</key>
-				<string>Shutdown</string>
+				<string>ResetSystem.efi</string>
 				<key>Path</key>
 				<string>ResetSystem.efi</string>
 				<key>RealPath</key>
@@ -2129,220 +2189,40 @@
 				<false/>
 			</dict>
 			<dict>
-				<key>Name</key>
-				<string>BootKicker.efi</string>
-				<key>Comment</key>
-				<string>BootKicker.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>BootKicker.efi</string>
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
-				<true/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>RealPath</key>
 				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Name</key>
-				<string>ChipTune.efi</string>
-				<key>Comment</key>
-				<string>ChipTune.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>ChipTune.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Name</key>
-				<string>CleanNvram.efi</string>
 				<key>Comment</key>
 				<string>CleanNvram.efi</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>Name</key>
+				<string>Clear NVRAM</string>
 				<key>Path</key>
 				<string>CleanNvram.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<false/>
-				<key>Flavour</key>
-				<string>Auto</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
 				<false/>
 			</dict>
 			<dict>
-				<key>Name</key>
-				<string>ControlMsrE2.efi</string>
-				<key>Comment</key>
-				<string>ControlMsrE2.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>ControlMsrE2.efi</string>
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
 				<true/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Name</key>
-				<string>CsrUtil.efi</string>
-				<key>Comment</key>
-				<string>CsrUtil.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>CsrUtil.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Name</key>
-				<string>GopStop.efi</string>
-				<key>Comment</key>
-				<string>GopStop.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>GopStop.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Name</key>
-				<string>KeyTester.efi</string>
-				<key>Comment</key>
-				<string>KeyTester.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>KeyTester.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Name</key>
-				<string>MmapDump.efi</string>
-				<key>Comment</key>
-				<string>MmapDump.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>MmapDump.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Name</key>
-				<string>OpenControl.efi</string>
-				<key>Comment</key>
-				<string>OpenControl.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>OpenControl.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Name</key>
-				<string>RtcRw.efi</string>
-				<key>Comment</key>
-				<string>RtcRw.efi</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>RtcRw.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>RealPath</key>
-				<false/>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Name</key>
-				<string>TpmInfo.efi</string>
 				<key>Comment</key>
 				<string>TpmInfo.efi</string>
 				<key>Enabled</key>
 				<false/>
-				<key>Path</key>
-				<string>TpmInfo.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
+				<key>Name</key>
+				<string>TpmInfo.efi</string>
+				<key>Path</key>
+				<string>TpmInfo.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -2373,7 +2253,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 swd_panic=1 alcid=1</string>
+				<string>keepsyms=1 debug=0x144 swd_panic=1 alcid=1</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -2615,124 +2495,104 @@
 				<string>OpenRuntime.efi</string>
 			</dict>
 			<dict>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>TbtForcePower.efi</string>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>TbtForcePower.efi</string>
-			</dict>
-			<dict>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>EfiGuardDxe.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Portable x64 UEFI bootkit that patches the Windows boot manager, boot loader and kernel at boot time in order to disable PatchGuard and Driver Signature Enforcement (DSE).</string>
+				<string>TbtForcePower.efi</string>
 			</dict>
 			<dict>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>Loader.config.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Part of EfiGuard</string>
-			</dict>
-			<dict>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>Loader.efi</string>
-				<key>Arguments</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Part of EfiGuard</string>
-			</dict>
-			<dict>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>ext2_x64.efi</string>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>Ext2 UEFI file system</string>
-			</dict>
-			<dict>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>f2fs_x64.efi</string>
+				<string>ext2_x64.efi</string>
+			</dict>
+			<dict>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>f2fs UEFI file system</string>
-			</dict>
-			<dict>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>fat_x64.efi</string>
+				<string>f2fs_x64.efi</string>
+			</dict>
+			<dict>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>FAT UEFI file system</string>
-			</dict>
-			<dict>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>hfs_x64.efi</string>
+				<string>fat_x64.efi</string>
+			</dict>
+			<dict>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>HFS UEFI file system</string>
-			</dict>
-			<dict>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>iso9660_x64.efi</string>
+				<string>hfs_x64.efi</string>
+			</dict>
+			<dict>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>ISO9660 UEFI file system</string>
-			</dict>
-			<dict>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>ntfs_x64.efi</string>
+				<string>iso9660_x64.efi</string>
+			</dict>
+			<dict>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>NTFS UEFI file system</string>
-			</dict>
-			<dict>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>procfs_x64.efi</string>
+				<string>ntfs_x64.efi</string>
+			</dict>
+			<dict>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>procfs UEFI file system</string>
-			</dict>
-			<dict>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>tar_x64.efi</string>
+				<string>procfs_x64.efi</string>
+			</dict>
+			<dict>
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
 				<string>tar UEFI file system</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>tar_x64.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Comment</key>
+				<string>VirtualSMC EFI driver</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>VirtualSmc.efi</string>
 			</dict>
 		</array>
 		<key>Input</key>
